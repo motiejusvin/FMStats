@@ -1,0 +1,10 @@
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe.config
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.pdb
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\MySql.Data.dll
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.ProjectInstaller.resources
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.csproj.GenerateResource.cache
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.csproj.CoreCompileInputs.cache
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.csproj.CopyComplete
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.exe
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.pdb
