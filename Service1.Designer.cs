@@ -29,8 +29,12 @@ namespace GoldFmCollector
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            // 
+            // Service1
+            // 
+            this.AutoLog = false;
             this.ServiceName = "Service1";
+
         }
 
         #endregion

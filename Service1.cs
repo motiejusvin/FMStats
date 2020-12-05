@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
@@ -17,6 +18,11 @@ namespace GoldFmCollector
 {
     public partial class Service1 : ServiceBase
     {
+
+        StreamWriter sw;
+        
+        
+        //public string fn = @"C:\Users\Public\"+ DateTime.Now +"Log.txt";
         BackgroundWorker backgroundWorker1 = new BackgroundWorker();
         public Service1()
         {
@@ -28,7 +34,7 @@ namespace GoldFmCollector
             throw new NotImplementedException();
         }
 
-        private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        public void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
             MySqlConnection con = new MySqlConnection("server=localhost;database=gold;uid=gold;pwd=localhost");
@@ -39,13 +45,18 @@ namespace GoldFmCollector
             }
             catch (MySqlException)
             {
-                Console.WriteLine("Couldn't Connect to MySQL database. Check if database is online");
-                Console.ReadKey();
+                using (StreamWriter writes = new StreamWriter(@"C:\Log.txt",true))
+                {
+                    writes.WriteLine(DateTime.Now + " " + "Couldn't Connect to MySQL database. Check if database is online");
+                }
                 return;
             }
             if (con.State == ConnectionState.Open)
             {
-                Console.WriteLine("Succesfully connected To MySQL Database");
+                using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                {
+                    writes.Write(DateTime.Now + " " + "Succesfully connected To MySQL Database");
+                }
             }
             string previuos = "";
             System.Net.WebClient client = new WebClient();
@@ -59,7 +70,10 @@ namespace GoldFmCollector
                 {
 
                     isconnected = false;
-                    Console.WriteLine("Failed To Connect to MySQL Database. Retrying");
+                    using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                    {
+                        writes.WriteLine(DateTime.Now + " " + "Failed To Connect to MySQL Database. Retrying");
+                    }
                     try
                     {
                         con.Close();
@@ -74,12 +88,26 @@ namespace GoldFmCollector
                 if (!isconnected && con.Ping())
                 {
                     isconnected = true;
-                    Console.WriteLine("Connected Succesfully");
-                }
+                    using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                    {
+                        writes.WriteLine(DateTime.Now + " " + "Connected Succesfully", 0);
+                    }
+                    }
                 if (nextdatetime <= DateTime.Now)
                 {
-                    response =
-                       client.DownloadString("http://goldfm.lt/wp-content/themes/goldfm/radio/php/radio-get.php");
+                    try
+                    {
+                        response =
+                           client.DownloadString("http://goldfm.lt/wp-content/themes/goldfm/radio/php/radio-get.php");
+
+                    }
+                    catch
+                    {
+                        using (StreamWriter writes = new StreamWriter(@"C:\Log.txt",true))
+                        {
+                            writes.WriteLine(DateTime.Now + " " + "Cannot Connect to GoldFM");
+                        }
+                    }
                     nextdatetime = DateTime.Now.AddSeconds(60);
                     if (md5h(response) != md5h(previuos))
                     {
@@ -91,12 +119,19 @@ namespace GoldFmCollector
                     }
                 }
                 Thread.Sleep(1000);
+
             }
         }
 
         protected override void OnStart(string[] args)
         {
-           main();
+
+            //File.Create(fn);
+            using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+            {
+                writes.WriteLine(DateTime.Now + " " + "Starting");
+            }
+            main();
         }
         public void main()
         {
@@ -122,6 +157,10 @@ namespace GoldFmCollector
 
         protected override void OnStop()
         {
+            using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+            {
+                writes.WriteLine(DateTime.Now + " " + "Stopping");
+            }
         }
     }
 }

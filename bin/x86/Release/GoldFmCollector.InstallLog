@@ -1,0 +1,285 @@
+﻿Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Creating EventLog source GoldFmCollector in log Application...
+Rolling back assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Restoring event log to previous state for source GoldFmCollector.
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Warning: The source GoldFmCollector is not registered on the local machine.
+Service GoldFmCollector is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
+Attempt to stop service GoldFmCollector.
+Installing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Installing service GoldFmCollector...
+Service GoldFmCollector has been successfully installed.
+Creating EventLog source GoldFmCollector in log Application...
+Committing assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Uninstalling assembly 'C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.InstallLog
+   assemblypath = C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\GoldFmCollector.exe
+Removing EventLog source GoldFmCollector.
+Service GoldFmCollector is being removed from the system...
+Service GoldFmCollector was successfully removed from the system.
