@@ -9,3 +9,4 @@ C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\Debug\GoldFmCollector.csp
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\Debug\GoldFmCollector.csproj.CopyComplete
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\Debug\GoldFmCollector.exe
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\Debug\GoldFmCollector.pdb
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\Debug\GoldFmCollector.Service1.resources

@@ -13,6 +13,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using System.Net.Sockets;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Net.Security;
 
 namespace GoldFmCollector
 {
@@ -20,32 +24,20 @@ namespace GoldFmCollector
     {
 
         StreamWriter sw;
-        
-        
-        //public string fn = @"C:\Users\Public\"+ DateTime.Now +"Log.txt";
-        BackgroundWorker backgroundWorker1 = new BackgroundWorker();
-        public Service1()
-        {
-            InitializeComponent();
-        }
+        BackgroundWorker goldworker = new BackgroundWorker();
+        BackgroundWorker m1plus = new BackgroundWorker();
 
-        private void BackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        public void OpenDB()
         {
 
-            MySqlConnection con = new MySqlConnection("server=localhost;database=gold;uid=gold;pwd=localhost");
-            MySqlCommand command;
+            MySqlConnection con = new MySqlConnection("server=localhost;database=fmstats;uid=gold;pwd=localhost");
             try
             {
                 con.Open();
             }
             catch (MySqlException)
             {
-                using (StreamWriter writes = new StreamWriter(@"C:\Log.txt",true))
+                using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
                 {
                     writes.WriteLine(DateTime.Now + " " + "Couldn't Connect to MySQL database. Check if database is online");
                 }
@@ -57,7 +49,28 @@ namespace GoldFmCollector
                 {
                     writes.Write(DateTime.Now + " " + "Succesfully connected To MySQL Database");
                 }
+                main();
             }
+           
+        }
+        public Service1()
+        {
+            InitializeComponent();
+        }
+
+        private void m1plus_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+        private void BackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void goldworker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;database=fmstats;uid=gold;pwd=localhost");
+            MySqlCommand goldcom;
             string previuos = "";
             System.Net.WebClient client = new WebClient();
             Random random = new Random();
@@ -108,39 +121,128 @@ namespace GoldFmCollector
                             writes.WriteLine(DateTime.Now + " " + "Cannot Connect to GoldFM");
                         }
                     }
-                    nextdatetime = DateTime.Now.AddSeconds(60);
                     if (md5h(response) != md5h(previuos))
                     {
-                        nextdatetime = DateTime.Now.AddSeconds(60 + random.Next(0, 30));
+                        nextdatetime = DateTime.Now.AddSeconds(32 + random.Next(0, 15));
                         previuos = response;
                         string cmdstring = "INSERT INTO goldfm (Date, Hash, Name) VALUES (now(),'" + md5h(response) + "','" + MySqlHelper.EscapeString(response) + "')";
-                        command = new MySqlCommand(cmdstring, con);
-                        command.ExecuteNonQuery();
+                        goldcom = new MySqlCommand(cmdstring, con);
+                        goldcom.ExecuteNonQuery();
                     }
                 }
                 Thread.Sleep(1000);
+            }
+        }
+        public void m1plus_DoWork(object sender, DoWorkEventArgs e)
+        {
+            JObject o;
+            MySqlConnection con = new MySqlConnection("server=localhost;database=fmstats;uid=gold;pwd=localhost");
+            MySqlCommand m1pCom;
+            string prev = "";
+            Random random = new Random();
+            WebClient clent = new WebClient();
+            string response = "";
+            DateTime nexdatetime = DateTime.Now;
+            bool isconnected = true;
+            while (true)
+            {
+                if (!con.Ping())
+                {
+                    isconnected = false;
+                    using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                    {
+                        writes.WriteLine(DateTime.Now + " " + "Failed To Connect to MySQL Database. Retrying");
+                    }
+                    try
+                    {
+                        con.Close();
+                        con.Open();
+                    }
+                    catch (MySqlException)
+                    {
+                    }
+                }
+                if (!isconnected && con.Ping())
+                {
+                    isconnected = true;
+                    using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                    {
+                        writes.WriteLine(DateTime.Now + " " + "Connected Succesfully", 0);
+                    }
+                }
+                //
+                if (nexdatetime <= DateTime.Now)
+                {
+                    try
+                    {
+                        response = clent.DownloadString("http://localhost/m1plusdat.php");
 
+                    }
+                    catch(Exception ex)
+                    {
+                        using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                        {
+                            writes.WriteLine(DateTime.Now + " " + "Cannot Connect to M1 " + ex);
+                        }
+                           
+                    }
+                    try
+                    {
+                         o = JObject.Parse(response);
+                    }
+                    catch(Exception ex)
+                     {
+                        using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
+                        {
+                            writes.WriteLine(DateTime.Now + " " + "Cannot Connect to M1 " + ex);
+                        }
+
+                     }
+                    o = JObject.Parse(response);
+                    string track = o["track"].ToString();
+                     if (track != "")
+                     {
+                        string result = o["author"] + " - " + o["track"];
+                            if (md5h(result) != md5h(prev))
+                            {
+ 
+                                nexdatetime = DateTime.Now.AddSeconds(30 + random.Next(0, 15));
+                                string artist = o["author"].ToString();
+                                prev = result;
+                                string cmd = "INSERT INTO m1plus(Date, Hash, Artist, Song) VALUES(now(), '" + md5h(response) + "', '" + MySqlHelper.EscapeString(artist) + "', '" + MySqlHelper.EscapeString(track) + "')";
+                                m1pCom = new MySqlCommand(cmd, con);
+                                m1pCom.ExecuteNonQuery();
+                            }
+                        }
+                    
+                }
+                Thread.Sleep(1000);
             }
         }
 
         protected override void OnStart(string[] args)
         {
-
-            //File.Create(fn);
             using (StreamWriter writes = new StreamWriter(@"C:\Log.txt", true))
             {
                 writes.WriteLine(DateTime.Now + " " + "Starting");
             }
-            main();
+            OpenDB();
         }
         public void main()
         {
-            backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
-            backgroundWorker1.RunWorkerCompleted += BackgroundWorker1_RunWorkerCompleted;
-            backgroundWorker1.WorkerReportsProgress = true;
-            backgroundWorker1.WorkerSupportsCancellation = true;
+            //GoldFM worker
+            goldworker.DoWork += goldworker_DoWork;
+            goldworker.RunWorkerCompleted += BackgroundWorker1_RunWorkerCompleted;
+            goldworker.WorkerReportsProgress = true;
+            goldworker.WorkerSupportsCancellation = true;
+            goldworker.RunWorkerAsync();
 
-            backgroundWorker1.RunWorkerAsync();
+            //M1+ Worker
+            m1plus.DoWork += m1plus_DoWork;
+            m1plus.RunWorkerCompleted += m1plus_RunWorkerCompleted;
+            m1plus.WorkerReportsProgress = true;
+            m1plus.WorkerSupportsCancellation = true;
+            m1plus.RunWorkerAsync();
         }
 
         public static string md5h(string input)

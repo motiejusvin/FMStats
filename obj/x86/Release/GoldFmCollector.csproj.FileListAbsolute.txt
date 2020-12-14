@@ -9,3 +9,5 @@ C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollect
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.exe
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.pdb
 C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\obj\x86\Release\GoldFmCollector.Service1.resources
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\Newtonsoft.Json.dll
+C:\Users\Motiejus\Desktop\Codes\C#\GoldFmCollector\bin\x86\Release\Newtonsoft.Json.xml
